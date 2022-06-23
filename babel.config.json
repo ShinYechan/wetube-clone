@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/preset-env"]
+}
+//babel에서 사용하고 싶은 플러그인을 적어준다.

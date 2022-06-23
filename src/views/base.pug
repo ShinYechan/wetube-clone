@@ -1,0 +1,20 @@
+//모든 url에서 반복적으로 사용할 틀을 의미하는 파일
+//이 안에서도 반복되는 부분들은 partials폴더에 개별적인 pug파일로 작성하여 include한다.
+//url마다 달라지는 부분은 block으로 둔다.
+
+//만약 url마다 변하는 작은 변수하나가 필요할 때는 #{변수이름}으로 표기한다.
+//이 변수의 값은 render()의 인자로 입력해서 넣어준다.
+
+
+
+doctype html 
+html(lang="ko")
+    head
+        title #{pageTitle} | Wetube 
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+    body
+        header 
+            h1=pageTitle
+        main  
+            block content
+        include partials/footer

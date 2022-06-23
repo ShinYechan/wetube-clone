@@ -1,0 +1,14 @@
+/ -> home
+/join -> join
+/login -> login
+/search -> search
+
+/users/:id -> see user
+/users/edit -> edit my profile
+/users/remove -> delete my profile
+/users/logout -> logout
+
+/videos/:id -> see video
+/videos/:id/edit -> edit video
+/videos/:id/remove -> delete video
+/videos/upload -> upload video
